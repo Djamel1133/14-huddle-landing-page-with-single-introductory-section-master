@@ -22,7 +22,7 @@
 /* Global styles */
 body {
     font-family: "Poppins", sans-serif;
-    background: var(--violet) url(images/bg-mobile.svg) no-repeat right / cover;
+    background: var(--violet) url(images/bg-mobile.svg) no-repeat center / cover ;
     color: var(--white);
 }
 
@@ -87,9 +87,19 @@ p {
     color: var(--white);
 }
 
+.fa-brands:hover{
+   background-color: var(--white);
+   color:  var(--soft-magenta);
+}
+
 /* Responsive layout */
 @media (min-width: 48rem) {
-    .content-container {
+   
+   body{
+    background: var(--violet) url("images/bg-desktop.svg") no-repeat center / cover;
+   } 
+
+   .content-container {
         display: flex;
         height: 100vh;
     }
