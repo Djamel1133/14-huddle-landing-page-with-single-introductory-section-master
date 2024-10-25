@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+/* Root variables for color, font size, and spacing */
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+    --white: #ffffff;
+    
+    --font-small: 400;
+    --font-large: 600;
+
+    --size-small: 1rem;
+    --size-medium: 1.125rem;
+    --size-large: 2.5rem;
+
+    --spacing-small: 1rem;
+    --spacing-medium: 2rem;
+    --spacing-large: 4rem;
+}
+
+/* Global styles */
+body {
+    font-family: "Poppins", sans-serif;
+    background: var(--violet) url(images/bg-mobile.svg) no-repeat right / cover;
+    color: var(--white);
+}
+
+/* Main content container styling */
+.content-container {
+    padding: 2rem;
+    text-align: center;
+}
+
+.logo {
+    width: 12rem;
+    margin-bottom: 3rem;
+}
+
+.mockup-image {
+    width: 97%;
+    max-height: 30rem;
+}
+
+/* Typography styles */
+h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: var(--size-large);
+    font-weight: var(--font-large);
+    margin: 6rem 0 2rem 0;
+}
+
+p {
+    font-size: var(--size-small);
+    font-weight: var(--font-small);
+    margin: 2rem 0;
+}
+
+/* Call-to-action button styles */
+.cta-button {
+    padding: 0.5rem 2rem;
+    background-color: var(--white);
+    border-radius: 30px;
+    color: var(--violet);
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: var(--soft-magenta);
+    color: var(--white);
+}
+
+/* Social media icons styling */
+.social-links {
+    margin: 3rem 3.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.fa-brands {
+    font-size: 0.8125rem;
+    border: 1px solid var(--white);
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--white);
+}
+
+/* Responsive layout */
+@media (min-width: 48rem) {
+    .content-container {
+        display: flex;
+        height: 100vh;
+    }
+
+    .intro {
+        width: 55%;
+    }
+
+    .details {
+        width: 45%;
+        padding: 2rem 2.5rem;
+        text-align: left;
+    }
+
+    .social-links {
+        justify-content: flex-end;
+    }
+}
+
